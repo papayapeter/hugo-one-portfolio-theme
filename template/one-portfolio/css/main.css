@@ -7135,3 +7135,23 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+
+.thumbnail {
+  position: relative;
+  display: inline-block; }
+
+.thumbnail-caption {
+  position: absolute;
+  padding: 3%;
+  transform: translate(0%, -100%);
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .1s, visibility .1s; }
+  .thumbnail-caption h4 {
+    display: inline;
+    vertical-align: bottom; }
+
+.thumbnail:hover .thumbnail-caption {
+  visibility: visible;
+  opacity: 1; }

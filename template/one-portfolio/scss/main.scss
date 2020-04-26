@@ -1,1 +1,30 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+.thumbnail {
+    position: relative;
+    display: inline-block;
+}
+
+.thumbnail-caption {
+    position: absolute;
+    padding: 3%;
+    transform: translate( 0%, -100% );
+    text-align: left;
+
+    // make caption visible on hover
+    visibility: hidden;
+    opacity: 0;
+    // transition
+    transition: opacity .1s, visibility .1s;
+
+    h4 {
+      display: inline;
+      vertical-align: bottom;
+    }
+}
+
+// make caption visible on hover
+.thumbnail:hover .thumbnail-caption {
+  visibility: visible;
+  opacity: 1;
+}
