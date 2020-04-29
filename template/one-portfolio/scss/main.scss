@@ -1,3 +1,19 @@
+// modified bootstrap variables
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1320px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1260px
+);
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Browser Prefixes
@@ -13,19 +29,52 @@
 	margin-bottom: 10px;
 }
 
+.navbar-brand {
+	z-index: 2;
+}
+
 // styling the extendable navbar to be transparent and absolute
-#collapsibleNavbar {
+.menu-modal {
+	.nav-item {
+		font-size: 1.1rem;
+	}
+
 	@include media-breakpoint-down(sm) {
-		position: absolute;
-		z-index: 1;
-		top: 100%;
-		left: -10px;
-		width: 100%;
-		padding: 30px;
+		display: none;
+	  position: fixed;
+	  z-index: 1;
+	  padding-left: 31px;
+	  padding-top: 80px;
+		left: 0;
+		top: 0;
+	  width: 100%;
+	  height: 100%;
+	  overflow: auto;
 		background-color: $white;
-		opacity: 0.5;
+		background-color: rgba(255,255,255,0.8);
+
+		.nav-item {
+			padding-top: 1rem;
+			font-size: 1.5rem;
+		}
 	}
 }
+
+// display menu (js)
+.menu-modal.menu-active {
+	display: block;
+}
+
+.navbar-toggler {
+	z-index: 2;
+}
+
+// disable scrolling when menu is displayed (js)
+body.menu-active {
+	overflow: hidden;
+  position: fixed;
+}
+
 
 // styling for the links
 .active-page {
@@ -48,8 +97,9 @@
 
 // menu styling for bootstrap container
 .menu-container {
-	position: relative;
+
 }
+
 // menu styling for bootstrap row
 .menu-row {
   padding: 0px;
@@ -70,7 +120,7 @@
 // div that contains text on the image
 .thumbnail-caption {
     position: absolute;
-    padding: 3%;
+    padding: 10px 20px 10px 10px;
     @include transform(translate( 0%, -100% ));
     text-align: left;
 
@@ -83,6 +133,20 @@
     h4 {
       display: inline;
       vertical-align: bottom;
+
+			font-size: 1.5rem;
+
+			@include media-breakpoint-down(lg) {
+				font-size: 1.3rem;
+			}
+
+			@include media-breakpoint-down(md) {
+				font-size: 1rem;
+			}
+
+			@include media-breakpoint-down(sm) {
+				font-size: 1.7rem;
+			}
     }
 }
 
