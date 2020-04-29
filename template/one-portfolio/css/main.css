@@ -6998,7 +6998,7 @@ a {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-left: 31px;
+    padding-left: 16px;
     padding-top: 80px;
     left: 0;
     top: 0;
@@ -7006,7 +7006,7 @@ a {
     height: 100%;
     overflow: auto;
     background-color: #fff;
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: rgba(255, 255, 255, 0.9); }
     .menu-modal .nav-item {
       padding-top: 1rem;
       font-size: 1.5rem; } }
