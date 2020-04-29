@@ -1,14 +1,77 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+// Browser Prefixes
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+// custom styling for the navbar
+.navbar-custom {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+// styling the extendable navbar to be transparent and absolute
+#collapsibleNavbar {
+	@include media-breakpoint-down(sm) {
+		position: absolute;
+		z-index: 1;
+		top: 100%;
+		left: -10px;
+		width: 100%;
+		padding: 30px;
+		background-color: $white;
+		opacity: 0.5;
+	}
+}
+
+// styling for the links
+.active-page {
+	color: $body-color;
+	transition: color .2s;
+
+	&:hover {
+		color: $body-color;
+	}
+}
+
+.inactive-page {
+	color: $gray-500;
+	transition: color .2s;
+
+	&:hover {
+		color: $body-color;
+	}
+}
+
+// menu styling for bootstrap container
+.menu-container {
+	position: relative;
+}
+// menu styling for bootstrap row
+.menu-row {
+  padding: 0px;
+}
+
+// menu styling for bootstrap column
+.menu-col {
+  padding: 0px;
+}
+
+// div that contains image and text
 .thumbnail {
     position: relative;
     display: inline-block;
+    padding: 10px;
 }
 
+// div that contains text on the image
 .thumbnail-caption {
     position: absolute;
     padding: 3%;
-    transform: translate( 0%, -100% );
+    @include transform(translate( 0%, -100% ));
     text-align: left;
 
     // make caption visible on hover
