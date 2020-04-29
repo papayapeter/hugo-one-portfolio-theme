@@ -23,10 +23,24 @@ $container-max-widths: (
 	-ms-transform: $transforms;
 	transform: $transforms;
 }
+
+// styling of html tags
+// links
+a {
+	color: $gray-500;
+	transition: color .2s;
+
+	&:hover {
+		color: $body-color;
+		text-decoration: none;
+	}
+}
+
 // custom styling for the navbar
 .navbar-custom {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	text-transform: uppercase;
 }
 
 .navbar-brand {
@@ -37,6 +51,7 @@ $container-max-widths: (
 .menu-modal {
 	.nav-item {
 		font-size: 1.1rem;
+		margin-left: 1rem;
 	}
 
 	@include media-breakpoint-down(sm) {
@@ -60,7 +75,7 @@ $container-max-widths: (
 	}
 }
 
-// display menu (js)
+// display nav menu (js)
 .menu-modal.menu-active {
 	display: block;
 }
@@ -69,7 +84,7 @@ $container-max-widths: (
 	z-index: 2;
 }
 
-// disable scrolling when menu is displayed (js)
+// disable scrolling when nav menu is displayed (js)
 body.menu-active {
 	overflow: hidden;
   position: fixed;
@@ -79,15 +94,6 @@ body.menu-active {
 // styling for the links
 .active-page {
 	color: $body-color;
-	transition: color .2s;
-
-	&:hover {
-		color: $body-color;
-	}
-}
-
-.inactive-page {
-	color: $gray-500;
 	transition: color .2s;
 
 	&:hover {
@@ -154,4 +160,20 @@ body.menu-active {
 .thumbnail:hover .thumbnail-caption {
   visibility: visible;
   opacity: 1;
+}
+
+// footer styling
+footer .container {
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+		padding: 15px 15px 0 15px;
+
+		list-style-type: none;
+
+		li {
+			color: $gray-500;
+		}
+	}
 }
