@@ -7066,10 +7066,10 @@ body.menu-active {
   visibility: visible;
   opacity: 1; }
 
-footer .container ul {
+footer ul {
   display: flex;
   justify-content: space-between;
   padding: 15px 15px 0 15px;
   list-style-type: none; }
-  footer .container ul li {
+  footer ul li {
     color: #adb5bd; }
