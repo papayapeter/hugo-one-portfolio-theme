@@ -3,7 +3,7 @@
 
 body {
   margin: 0px;
-  
+
 // font, font coloring & background coloring
   font-size: 100%;
   font-family: $font-family-sans-serif;
@@ -21,8 +21,8 @@ p {
 a {
   text-decoration: none;
   color: map-get($theme-colors, "link");
-  transition: color .2s;
-  
+  transition: color .3s;
+
   &:hover {
     color: map-get($theme-colors, "link-hover");
   }
@@ -48,13 +48,13 @@ header.menu-container {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  
+
   text-transform: uppercase;
-  
+
   a {
     font-size: 2rem;
     z-index: 2;
-    
+
     // make text bigger on small screen
     @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
       font-size: 2.2rem;
@@ -85,11 +85,11 @@ header.menu-container {
       overflow: auto;
       opacity: 0;
       transition: opacity ease 1s;
-      
+
       li {
         display: block;
         padding: 2rem 0rem;
-        
+
         a {
           font-size: 1.8rem;
         }
@@ -112,10 +112,10 @@ body.menu-active {
 .navbar-toggler {
   background-color: map-get($theme-colors, "background");
   border: none;
-  font-size: 150%;
+  font-size: 1.5rem;
   cursor: pointer;
   z-index: 2;
-  
+
   // display only on small screen
   display: none;
   @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
@@ -127,7 +127,7 @@ body.menu-active {
 .menu-container {
   margin: auto;
   background-color: map-get($theme-colors, "container");
-  
+
   // large container size on large screens
   max-width: map-get($container-max-widths, "lg");
   padding: 0px 10px;
@@ -146,7 +146,7 @@ body.menu-active {
 .menu-grid {
   display: grid;
   grid-template-rows: auto;
-  
+
   // 3 columns on large screen
   grid-template-columns: 1fr 1fr 1fr;
   // 2 columns on medium screen
@@ -163,14 +163,14 @@ body.menu-active {
 .thumbnail {
   position: relative;
   display: inline-block;
-  
+
   padding: 10px;
-  
+
   // no left & right padding for small screens
   @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
     padding: 10px 0px;
   }
-  
+
   img {
     display: block;
     width: 100%;
@@ -180,12 +180,11 @@ body.menu-active {
 
 // the caption on the image in the menu thumbnail
 .thumbnail-caption {
-  width: inherit;
   position: absolute;
   padding: 10px 20px 10px 10px;
   @include transform(translate( 0%, -100% ));
   text-align: left;
-  
+
   h4 {
     display: inline;
     vertical-align: bottom;
@@ -193,20 +192,17 @@ body.menu-active {
     font-size: 1.5rem;
     color: map-get($theme-colors, "thumbnail-text");
   }
-  
+
 // make caption visible on hover
-  visibility: hidden;
   opacity: 0;
-  transition: opacity .1s, visibility .1s;
+  transition: ease opacity .3s;
   // disable this on toucscreens
   @media (hover: none) {
-    visibility: visible;
     opacity: 1;
   }
 }
 
 .thumbnail:hover .thumbnail-caption {
-  visibility: visible;
   opacity: 1;
 }
 
