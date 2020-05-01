@@ -1,0 +1,58 @@
+// Colors
+//
+// black & white
+$white:   #fff;
+$gray-90: #e6e6e6;
+$gray-80: #cccccc;
+$gray-70: #b3b3b3;
+$gray-60: #999999;
+$gray-50: #808080;
+$gray-40: #666666;
+$gray-30: #4d4d4d;
+$gray-20: #333333;
+$gray-10: #1a1a1a;
+$black:   #000;
+
+// colored
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+// preset colors assigned to different elements
+$theme-colors: (
+  "background":     $white,
+  "container":      $white,
+  "headline-text":  $gray-10,
+  "body-text":      $gray-30,
+  "thumbnail-text": $white,
+  "link":           $gray-50,
+  "link-visited":   $gray-50,
+  "link-hover":     $gray-10,
+  "link-active":    $gray-10,
+);
+
+// theme font
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+// pefine the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries
+$grid-breakpoints: (
+  "sm": 700px,
+  "md": 1200px,
+  "lg": 1600px
+);
+
+// pefine the maximum width of `.container` for different screen sizes
+$container-max-widths: (
+  "sm": 520px,
+  "md": 1040px,
+  "lg": 1560px
+);

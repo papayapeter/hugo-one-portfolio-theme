@@ -1,179 +1,220 @@
-// modified bootstrap variables
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1320px
-);
+@import "mixins";
+@import "variables";
 
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1260px
-);
-
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-// Browser Prefixes
-@mixin transform($transforms) {
-	-webkit-transform: $transforms;
-	-moz-transform: $transforms;
-	-ms-transform: $transforms;
-	transform: $transforms;
+body {
+  margin: 0px;
+  
+// font, font coloring & background coloring
+  font-size: 100%;
+  font-family: $font-family-sans-serif;
+  background-color: map-get($theme-colors, "background");
 }
 
-// styling of html tags
-// links
+h1, h2, h3, h4, h5, h6 {
+  color: map-get($theme-colors, "headline-text");
+}
+
+p {
+  color: map-get($theme-colors, "body-text");
+}
+
 a {
-	color: $gray-500;
-	transition: color .2s;
-
-	&:hover {
-		color: $body-color;
-		text-decoration: none;
-	}
+  text-decoration: none;
+  color: map-get($theme-colors, "link");
+  transition: color .2s;
+  
+  &:hover {
+    color: map-get($theme-colors, "link-hover");
+  }
 }
 
-// custom styling for the navbar
-.navbar-custom {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	text-transform: uppercase;
+a.active {
+  color: map-get($theme-colors, "link-active");
 }
 
-.navbar-brand {
-	z-index: 2;
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
 
-// styling the extendable navbar to be transparent and absolute
-.menu-modal {
-	.nav-item {
-		font-size: 1.1rem;
-		margin-left: 1rem;
-	}
-
-	@include media-breakpoint-down(sm) {
-		display: none;
-	  position: fixed;
-	  z-index: 1;
-	  padding-left: 16px;
-	  padding-top: 80px;
-		left: 0;
-		top: 0;
-	  width: 100%;
-	  height: 100%;
-	  overflow: auto;
-		background-color: $white;
-		background-color: rgba(255,255,255,0.9);
-
-		.nav-item {
-			padding-top: 1rem;
-			font-size: 1.5rem;
-		}
-	}
+// nav menu
+header.menu-container {
+  padding: 20px 30px 30px 30px;
 }
 
-// display nav menu (js)
-.menu-modal.menu-active {
-	display: block;
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  
+  text-transform: uppercase;
+  
+  a {
+    font-size: 2rem;
+    z-index: 2;
+    
+    // make text bigger on small screen
+    @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
+      font-size: 2.2rem;
+    }
+  }
+
+  ul {
+    li {
+      display: inline-block;
+      padding-left: 30px;
+
+      a {
+        font-size: 1.2rem;
+      }
+    }
+    // make links dissapear on small screen
+    @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
+      pointer-events: none;
+      position: fixed;
+      z-index: 1;
+      padding-left: 10%;
+      padding-top: 7rem;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $white;
+      overflow: auto;
+      opacity: 0;
+      transition: opacity ease 1s;
+      
+      li {
+        display: block;
+        padding: 2rem 0rem;
+        
+        a {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+// make links reappear when .navbar-toggler is pressed (jquery)
+.menu-modal.active {
+  pointer-events: auto;
+  opacity: .9;
+}
+
+// disable scrolling when nav menu is displayed (jquery)
+body.menu-active {
+	overflow: hidden;
 }
 
 .navbar-toggler {
-	z-index: 2;
-}
-
-// disable scrolling when nav menu is displayed (js)
-body.menu-active {
-	overflow: hidden;
-  position: fixed;
-}
-
-
-// styling for the links
-.active-page {
-	color: $body-color;
-	transition: color .2s;
-
-	&:hover {
-		color: $body-color;
-	}
-}
-
-// menu styling for bootstrap container
-.menu-container {
-
-}
-
-// menu styling for bootstrap row
-.menu-row {
-  padding: 0px;
-}
-
-// menu styling for bootstrap column
-.menu-col {
-  padding: 0px;
-}
-
-// div that contains image and text
-.thumbnail {
-    position: relative;
+  background-color: map-get($theme-colors, "background");
+  border: none;
+  font-size: 150%;
+  cursor: pointer;
+  z-index: 2;
+  
+  // display only on small screen
+  display: none;
+  @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
     display: inline-block;
-    padding: 10px;
+  }
 }
 
-// div that contains text on the image
+// container for the main menu (homepage)
+.menu-container {
+  margin: auto;
+  background-color: map-get($theme-colors, "container");
+  
+  // large container size on large screens
+  max-width: map-get($container-max-widths, "lg");
+  padding: 0px 10px;
+  // medium container size on medium screens
+  @media only screen and (max-width: map-get($grid-breakpoints, "md")) {
+    max-width: map-get($container-max-widths, "md");
+  }
+  // small container size on small screens
+  @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
+    max-width: map-get($container-max-widths, "sm");
+    padding: 0px;
+  }
+}
+
+// grid options for the menu container
+.menu-grid {
+  display: grid;
+  grid-template-rows: auto;
+  
+  // 3 columns on large screen
+  grid-template-columns: 1fr 1fr 1fr;
+  // 2 columns on medium screen
+  @media only screen and (max-width: map-get($grid-breakpoints, "md")) {
+    grid-template-columns: 1fr 1fr;
+  }
+  // 1 column on small screen
+  @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// the menu thumbnail
+.thumbnail {
+  position: relative;
+  display: inline-block;
+  
+  padding: 10px;
+  
+  // no left & right padding for small screens
+  @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
+    padding: 10px 0px;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+// the caption on the image in the menu thumbnail
 .thumbnail-caption {
-    position: absolute;
-    padding: 10px 20px 10px 10px;
-    @include transform(translate( 0%, -100% ));
-    text-align: left;
+  width: inherit;
+  position: absolute;
+  padding: 10px 20px 10px 10px;
+  @include transform(translate( 0%, -100% ));
+  text-align: left;
+  
+  h4 {
+    display: inline;
+    vertical-align: bottom;
 
-    // make caption visible on hover
-    visibility: hidden;
-    opacity: 0;
-    // transition
-    transition: opacity .1s, visibility .1s;
-
-    h4 {
-      display: inline;
-      vertical-align: bottom;
-
-			font-size: 1.5rem;
-
-			@include media-breakpoint-down(lg) {
-				font-size: 1.3rem;
-			}
-
-			@include media-breakpoint-down(md) {
-				font-size: 1rem;
-			}
-
-			@include media-breakpoint-down(sm) {
-				font-size: 1.7rem;
-			}
-    }
+    font-size: 1.5rem;
+    color: map-get($theme-colors, "thumbnail-text");
+  }
+  
+// make caption visible on hover
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .1s, visibility .1s;
+  // disable this on toucscreens
+  @media (hover: none) {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
-// make caption visible on hover
 .thumbnail:hover .thumbnail-caption {
   visibility: visible;
   opacity: 1;
 }
 
-// footer styling
+// footer
 footer {
-
-	ul {
-		display: flex;
+  ul {
+    display: flex;
 		justify-content: space-between;
 		padding: 15px 15px 0 15px;
-
-		list-style-type: none;
-
-		li {
-			color: $gray-500;
-		}
-	}
+  }
 }

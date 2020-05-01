@@ -16,137 +16,84 @@
   <!-- body -->
   <body>
     <!-- navbar -->
-    <header class="container-fluid">
-      <nav class="navbar navbar-expand-md navbar-custom">
-        <!-- Brand -->
-        <a class="navbar-brand text-body" href="#"><h2>Zeno Gries</h2></a>
-
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler text-body" type="button">
+    <header class="menu-container">
+      <nav class="navbar">
+        <a class="active" href="#">Zeno Gries</a>
+        
+        <button class="navbar-toggler" type="button">
           <span class="fas fa-bars"></span>
         </button>
-
-        <!-- Navbar links -->
-        <div class="navbar-collapse menu-modal justify-content-end">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active-page" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gruppenarbeiten</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-        </div>
+        
+        <ul class="menu-modal">
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Gruppenarbeiten</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
       </nav>
     </header>
 
-    <!-- main container -->
-    <div class="container menu-container">
-      <div class="row menu-row">
-        <div class="col-md-4 menu-col d-flex justify-content-center">
-          <!-- thumbnail link that gets animated when you hover over it -->
-          <a href="#">
-            <div class="thumbnail hover-gif">
-              <img class="img-fluid" src="img/dazwischen.gif"/>
-              <div class="thumbnail-caption text-white">
-                <h4>Der Künstler ist jetzt flach und leuchtet</h4>
-              </div>
-            </div>
-          </a> <!-- thumbnail end -->
-        </div> <!-- column end -->
-
-        <div class="col-md-4 menu-col d-flex justify-content-center">
-          <!-- thumbnail link that gets animated when you hover over it -->
-          <a href="#">
-            <div class="thumbnail hover-gif">
-              <img class="img-fluid" src="img/dazwischen.gif"/>
-              <div class="thumbnail-caption text-white">
-                <h4>Der Künstler ist jetzt flach und leuchtet</h4>
-              </div>
-            </div>
-          </a> <!-- thumbnail end -->
-        </div> <!-- column end -->
-
-        <div class="col-md-4 menu-col d-flex justify-content-center">
-          <!-- thumbnail link that gets animated when you hover over it -->
-          <a href="#">
-            <div class="thumbnail hover-gif">
-              <img class="img-fluid" src="img/dazwischen.gif"/>
-              <div class="thumbnail-caption text-white">
-                <h4>Der Künstler ist jetzt flach und leuchtet</h4>
-              </div>
-            </div>
-          </a> <!-- thumbnail end -->
-        </div> <!-- column end -->
-
-        <div class="col-md-4 menu-col d-flex justify-content-center">
-          <!-- thumbnail link that gets animated when you hover over it -->
-          <a href="#">
-            <div class="thumbnail hover-gif">
-              <img class="img-fluid" src="img/dazwischen.gif"/>
-              <div class="thumbnail-caption text-white">
-                <h4>Der Künstler ist jetzt flach und leuchtet</h4>
-              </div>
-            </div>
-          </a> <!-- thumbnail end -->
-        </div> <!-- column end -->
-
-        <div class="col-md-4 menu-col d-flex justify-content-center">
-          <!-- thumbnail link that gets animated when you hover over it -->
-          <a href="#">
-            <div class="thumbnail hover-gif">
-              <img class="img-fluid" src="img/dazwischen.gif"/>
-              <div class="thumbnail-caption text-white">
-                <h4>Der Künstler ist jetzt flach und leuchtet</h4>
-              </div>
-            </div>
-          </a> <!-- thumbnail end -->
-        </div> <!-- column end -->
-
-        <div class="col-md-4 menu-col d-flex justify-content-center">
-          <!-- thumbnail link that gets animated when you hover over it -->
-          <a href="#">
-            <div class="thumbnail hover-gif">
-              <img class="img-fluid" src="img/dazwischen.gif"/>
-              <div class="thumbnail-caption text-white">
-                <h4>Der Künstler ist jetzt flach und leuchtet</h4>
-              </div>
-            </div>
-          </a> <!-- thumbnail end -->
-        </div> <!-- column end -->
-
-        <div class="col-md-4 menu-col d-flex justify-content-center">
-          <!-- thumbnail link that gets animated when you hover over it -->
-          <a href="#">
-            <div class="thumbnail hover-gif">
-              <img class="img-fluid" src="img/dazwischen.gif"/>
-              <div class="thumbnail-caption text-white">
-                <h4>Der Künstler ist jetzt flach und leuchtet</h4>
-              </div>
-            </div>
-          </a> <!-- thumbnail end -->
-        </div> <!-- column end -->
-
-      </div>
+    <!-- main menu container -->
+    <div class="menu-container menu-grid">
+      <!-- menu element thumbnail -->
+      <a class="thumbnail hover-gif" href="#">
+        <img src="img/dazwischen.jpg" alt="description">
+        <div class="thumbnail-caption">
+          <h4>Der Künstler ist jetzt flach und leuchtet</h4>
+        </div>
+      </a>
+      <!-- menu element thumbnail end -->
+      <!-- menu element thumbnail -->
+      <a class="thumbnail hover-gif" href="#">
+        <img src="img/ich-kann-mich-nicht-beherrschen.jpg" alt="description">
+        <div class="thumbnail-caption">
+          <h4>Ich kann mich nicht beherrschen</h4>
+        </div>
+      </a>
+      <!-- menu element thumbnail end -->
+      <!-- menu element thumbnail -->
+      <a class="thumbnail hover-gif" href="#">
+        <img src="img/zweitbesetzung.jpg" alt="description">
+        <div class="thumbnail-caption">
+          <h4>Die Zweitbesetzung</h4>
+        </div>
+      </a>
+      <!-- menu element thumbnail end -->
+      <!-- menu element thumbnail -->
+      <a class="thumbnail hover-gif" href="#">
+        <img src="img/dazwischen.jpg" alt="description">
+        <div class="thumbnail-caption">
+          <h4>Der Künstler ist jetzt flach und leuchtet</h4>
+        </div>
+      </a>
+      <!-- menu element thumbnail end -->
+      <!-- menu element thumbnail -->
+      <a class="thumbnail hover-gif" href="#">
+        <img src="img/ich-kann-mich-nicht-beherrschen.jpg" alt="description">
+        <div class="thumbnail-caption">
+          <h4>Ich kann mich nicht beherrschen</h4>
+        </div>
+      </a>
+      <!-- menu element thumbnail end -->
+      <!-- menu element thumbnail -->
+      <a class="thumbnail hover-gif" href="#">
+        <img src="img/zweitbesetzung.jpg" alt="description">
+        <div class="thumbnail-caption">
+          <h4>Die Zweitbesetzung</h4>
+        </div>
+      </a>
+      <!-- menu element thumbnail end -->
     </div>
-    
+
     <!-- footer -->
-    <footer class="container">
+    <footer class="menu-container">
       <ul>
         <li>&copy; 2020 Zeno Gries</li>
         <li><a href="#">Impressum</a></li>
         <li><a href="#">Datenschutz</a></li>
       </ul>
     </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery & scripts -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
