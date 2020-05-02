@@ -38,6 +38,10 @@ a.active {
 // nav menu
 header.menu-container {
   padding: 20px 30px 30px 30px;
+  // less padding size on small screens
+  @media only screen and (max-width: map-get($menu-grid-breakpoints, "sm")) {
+    padding: 20px 30px 30px 20px;
+  }
 }
 
 .navbar {
@@ -66,6 +70,9 @@ header.menu-container {
       a {
         font-size: 1.2rem;
       }
+    }
+    li:first-child {
+      padding-left: 0px;
     }
     // make links dissapear on small screen
     @media only screen and (max-width: map-get($menu-grid-breakpoints, "sm")) {
@@ -124,7 +131,22 @@ body.menu-active {
 //
 // single page -----------------------------------------------------------------
 .container {
+  margin: auto;
+  background-color: map-get($theme-colors, "container");
 
+  // large container size on large screens
+  max-width: map-get($menu-container-max-widths, "lg");
+  padding: 10px 300px;
+  // medium container size on medium screens
+  @media only screen and (max-width: map-get($menu-grid-breakpoints, "md")) {
+    max-width: map-get($menu-container-max-widths, "md");
+    padding: 10px 150px;
+  }
+  // small container size on small screens
+  @media only screen and (max-width: map-get($menu-grid-breakpoints, "sm")) {
+    max-width: map-get($menu-container-max-widths, "sm");
+    padding: 10px 20px;
+  }
 }
 
 // menu ------------------------------------------------------------------------
