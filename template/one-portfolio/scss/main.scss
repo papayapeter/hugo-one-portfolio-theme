@@ -15,8 +15,50 @@ h1, h2, h3, h4, h5, h6 {
   color: map-get($theme-colors, "headline-text");
 }
 
+h1 {
+  font-size: 1.9rem;
+  // smaller font size on medium screens
+  @media only screen and (max-width: map-get($menu-grid-breakpoints, "md")) {
+    font-size: 1.8rem;
+  }
+}
+
+h3 {
+  font-size: 1.05rem;
+  // smaller font size on medium screens
+  @media only screen and (max-width: map-get($menu-grid-breakpoints, "md")) {
+    font-size: 1rem;
+  }
+}
+
 p {
   color: map-get($theme-colors, "body-text");
+  font-size: 1.05rem;
+  line-height: 1.55;
+  // smaller font size on medium screens
+  @media only screen and (max-width: map-get($menu-grid-breakpoints, "md")) {
+    font-size: 1rem;
+  }
+}
+
+ol li {
+  color: map-get($theme-colors, "body-text");
+  font-size: 1.05rem;
+  line-height: 1.55;
+  // smaller font size on medium screens
+  @media only screen and (max-width: map-get($menu-grid-breakpoints, "md")) {
+    font-size: 1rem;
+  }
+}
+
+ul li {
+  color: map-get($theme-colors, "body-text");
+  font-size: 1.05rem;
+  line-height: 1.55;
+  // smaller font size on medium screens
+  @media only screen and (max-width: map-get($menu-grid-breakpoints, "md")) {
+    font-size: 1rem;
+  }
 }
 
 a {
@@ -135,17 +177,60 @@ body.menu-active {
   background-color: map-get($theme-colors, "container");
 
   // large container size on large screens
-  max-width: map-get($menu-container-max-widths, "lg");
-  padding: 10px 300px;
+  max-width: map-get($menu-container-max-widths, "lg") - 400px;
+  padding: 0px 30px 10px 30px;
   // medium container size on medium screens
   @media only screen and (max-width: map-get($menu-grid-breakpoints, "md")) {
     max-width: map-get($menu-container-max-widths, "md");
-    padding: 10px 150px;
   }
   // small container size on small screens
   @media only screen and (max-width: map-get($menu-grid-breakpoints, "sm")) {
     max-width: map-get($menu-container-max-widths, "sm");
-    padding: 10px 20px;
+  }
+  
+  .embed {
+    position: relative; 
+    padding-bottom: 56.25%; /* ratio 16x9 */
+    height: 0; 
+    overflow: hidden; 
+    width: 100%;
+    height: auto;
+    
+    iframe {
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%;
+    }
+  }
+}
+
+.content {
+  ol {
+    list-style-type: none;
+    display: grid;
+    margin: 0px;
+    padding: 20px 0px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 1em;
+    
+    // stack on small screens
+    @media only screen and (max-width: map-get($menu-grid-breakpoints, "sm")) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+    
+    li:before {    
+      font-family: 'FontAwesome';
+      content: '\f105';
+      margin: 0 5px 0 -15px;
+    }
   }
 }
 
@@ -240,4 +325,10 @@ footer ul {
   margin: 0px;
 	padding: 15px 15px 0 15px;
   list-style-type: none;
+  
+  color: map-get($theme-colors, "link");
+  
+  li {
+    font-size: .9rem;
+  }
 }
