@@ -1,6 +1,7 @@
 @import "mixins";
 @import "variables";
 
+// general ---------------------------------------------------------------------
 body {
   margin: 0px;
 
@@ -32,12 +33,8 @@ a.active {
   color: map-get($theme-colors, "link-active");
 }
 
-ul {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
-
+// header ----------------------------------------------------------------------
+//
 // nav menu
 header.menu-container {
   padding: 20px 30px 30px 30px;
@@ -56,7 +53,7 @@ header.menu-container {
     z-index: 2;
 
     // make text bigger on small screen
-    @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
+    @media only screen and (max-width: map-get($menu-grid-breakpoints, "sm")) {
       font-size: 2.2rem;
     }
   }
@@ -71,7 +68,7 @@ header.menu-container {
       }
     }
     // make links dissapear on small screen
-    @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
+    @media only screen and (max-width: map-get($menu-grid-breakpoints, "sm")) {
       pointer-events: none;
       position: fixed;
       z-index: 1;
@@ -118,26 +115,34 @@ body.menu-active {
 
   // display only on small screen
   display: none;
-  @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
+  @media only screen and (max-width: map-get($menu-grid-breakpoints, "sm")) {
     display: inline-block;
   }
 }
 
+// main ------------------------------------------------------------------------
+//
+// single page -----------------------------------------------------------------
+.container {
+
+}
+
+// menu ------------------------------------------------------------------------
 // container for the main menu (homepage)
 .menu-container {
   margin: auto;
   background-color: map-get($theme-colors, "container");
 
   // large container size on large screens
-  max-width: map-get($container-max-widths, "lg");
+  max-width: map-get($menu-container-max-widths, "lg");
   padding: 0px 10px;
   // medium container size on medium screens
-  @media only screen and (max-width: map-get($grid-breakpoints, "md")) {
-    max-width: map-get($container-max-widths, "md");
+  @media only screen and (max-width: map-get($menu-grid-breakpoints, "md")) {
+    max-width: map-get($menu-container-max-widths, "md");
   }
   // small container size on small screens
-  @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
-    max-width: map-get($container-max-widths, "sm");
+  @media only screen and (max-width: map-get($menu-grid-breakpoints, "sm")) {
+    max-width: map-get($menu-container-max-widths, "sm");
     padding: 0px;
   }
 }
@@ -150,11 +155,11 @@ body.menu-active {
   // 3 columns on large screen
   grid-template-columns: 1fr 1fr 1fr;
   // 2 columns on medium screen
-  @media only screen and (max-width: map-get($grid-breakpoints, "md")) {
+  @media only screen and (max-width: map-get($menu-grid-breakpoints, "md")) {
     grid-template-columns: 1fr 1fr;
   }
   // 1 column on small screen
-  @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
+  @media only screen and (max-width: map-get($menu-grid-breakpoints, "sm")) {
     grid-template-columns: 1fr;
   }
 }
@@ -167,7 +172,7 @@ body.menu-active {
   padding: 10px;
 
   // no left & right padding for small screens
-  @media only screen and (max-width: map-get($grid-breakpoints, "sm")) {
+  @media only screen and (max-width: map-get($menu-grid-breakpoints, "sm")) {
     padding: 10px 0px;
   }
 
@@ -206,11 +211,11 @@ body.menu-active {
   opacity: 1;
 }
 
-// footer
-footer {
-  ul {
-    display: flex;
-		justify-content: space-between;
-		padding: 15px 15px 0 15px;
-  }
+// footer ----------------------------------------------------------------------
+footer ul {
+  display: flex;
+	justify-content: space-between;
+  margin: 0px;
+	padding: 15px 15px 0 15px;
+  list-style-type: none;
 }

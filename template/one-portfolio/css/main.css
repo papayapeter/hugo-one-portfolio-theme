@@ -2,96 +2,70 @@ body {
   margin: 0px;
   font-size: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #1a1a1a;
-}
+  color: #1a1a1a; }
 
 p {
-  color: #4d4d4d;
-}
+  color: #4d4d4d; }
 
 a {
   text-decoration: none;
   color: #808080;
-  transition: color 0.3s;
-}
-a:hover {
-  color: #1a1a1a;
-}
+  transition: color .3s; }
+  a:hover {
+    color: #1a1a1a; }
 
 a.active {
-  color: #1a1a1a;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
+  color: #1a1a1a; }
 
 header.menu-container {
-  padding: 20px 30px 30px 30px;
-}
+  padding: 20px 30px 30px 30px; }
 
 .navbar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  text-transform: uppercase;
-}
-.navbar a {
-  font-size: 2rem;
-  z-index: 2;
-}
-@media only screen and (max-width: 700px) {
+  text-transform: uppercase; }
   .navbar a {
-    font-size: 2.2rem;
-  }
-}
-.navbar ul li {
-  display: inline-block;
-  padding-left: 30px;
-}
-.navbar ul li a {
-  font-size: 1.2rem;
-}
-@media only screen and (max-width: 700px) {
-  .navbar ul {
-    pointer-events: none;
-    position: fixed;
-    z-index: 1;
-    padding-left: 10%;
-    padding-top: 7rem;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    overflow: auto;
-    opacity: 0;
-    transition: opacity ease 1s;
-  }
+    font-size: 2rem;
+    z-index: 2; }
+    @media only screen and (max-width: 700px) {
+      .navbar a {
+        font-size: 2.2rem; } }
   .navbar ul li {
-    display: block;
-    padding: 2rem 0rem;
-  }
-  .navbar ul li a {
-    font-size: 1.8rem;
-  }
-}
-
+    display: inline-block;
+    padding-left: 30px; }
+    .navbar ul li a {
+      font-size: 1.2rem; }
+  @media only screen and (max-width: 700px) {
+    .navbar ul {
+      pointer-events: none;
+      position: fixed;
+      z-index: 1;
+      padding-left: 10%;
+      padding-top: 7rem;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      overflow: auto;
+      opacity: 0;
+      transition: opacity ease 1s; }
+      .navbar ul li {
+        display: block;
+        padding: 2rem 0rem; }
+        .navbar ul li a {
+          font-size: 1.8rem; } }
 .menu-modal.active {
   pointer-events: auto;
-  opacity: 0.9;
-}
+  opacity: .9; }
 
 body.menu-active {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .navbar-toggler {
   background-color: #fff;
@@ -99,63 +73,43 @@ body.menu-active {
   font-size: 1.5rem;
   cursor: pointer;
   z-index: 2;
-  display: none;
-}
-@media only screen and (max-width: 700px) {
-  .navbar-toggler {
-    display: inline-block;
-  }
-}
-
+  display: none; }
+  @media only screen and (max-width: 700px) {
+    .navbar-toggler {
+      display: inline-block; } }
 .menu-container {
   margin: auto;
   background-color: #fff;
   max-width: 1560px;
-  padding: 0px 10px;
-}
-@media only screen and (max-width: 1200px) {
-  .menu-container {
-    max-width: 1040px;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .menu-container {
-    max-width: 520px;
-    padding: 0px;
-  }
-}
-
+  padding: 0px 10px; }
+  @media only screen and (max-width: 1200px) {
+    .menu-container {
+      max-width: 1040px; } }
+  @media only screen and (max-width: 700px) {
+    .menu-container {
+      max-width: 520px;
+      padding: 0px; } }
 .menu-grid {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-@media only screen and (max-width: 1200px) {
-  .menu-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .menu-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
+  grid-template-columns: 1fr 1fr 1fr; }
+  @media only screen and (max-width: 1200px) {
+    .menu-grid {
+      grid-template-columns: 1fr 1fr; } }
+  @media only screen and (max-width: 700px) {
+    .menu-grid {
+      grid-template-columns: 1fr; } }
 .thumbnail {
   position: relative;
   display: inline-block;
-  padding: 10px;
-}
-@media only screen and (max-width: 700px) {
-  .thumbnail {
-    padding: 10px 0px;
-  }
-}
-.thumbnail img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+  padding: 10px; }
+  @media only screen and (max-width: 700px) {
+    .thumbnail {
+      padding: 10px 0px; } }
+  .thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto; }
 
 .thumbnail-caption {
   position: absolute;
@@ -166,28 +120,21 @@ body.menu-active {
   transform: translate(0%, -100%);
   text-align: left;
   opacity: 0;
-  transition: ease opacity 0.3s;
-}
-.thumbnail-caption h4 {
-  display: inline;
-  vertical-align: bottom;
-  font-size: 1.5rem;
-  color: #fff;
-}
-@media (hover: none) {
-  .thumbnail-caption {
-    opacity: 1;
-  }
-}
-
+  transition: ease opacity .3s; }
+  .thumbnail-caption h4 {
+    display: inline;
+    vertical-align: bottom;
+    font-size: 1.5rem;
+    color: #fff; }
+  @media (hover: none) {
+    .thumbnail-caption {
+      opacity: 1; } }
 .thumbnail:hover .thumbnail-caption {
-  opacity: 1;
-}
+  opacity: 1; }
 
 footer ul {
   display: flex;
   justify-content: space-between;
+  margin: 0px;
   padding: 15px 15px 0 15px;
-}
-
-/*# sourceMappingURL=main.css.map */
+  list-style-type: none; }
