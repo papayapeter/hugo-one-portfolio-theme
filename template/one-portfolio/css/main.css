@@ -20,6 +20,15 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 1200px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
 h3 {
   font-size: 1.05rem;
 }
@@ -66,6 +75,11 @@ a {
   text-decoration: none;
   color: #808080;
   transition: color 0.3s;
+}
+@media (hover: none) {
+  a {
+    color: #1a1a1a;
+  }
 }
 a:hover {
   color: #1a1a1a;
@@ -114,13 +128,13 @@ header.menu-container {
 .navbar ul li:first-child {
   padding-left: 0px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1200px) {
   .navbar ul {
     pointer-events: none;
     position: fixed;
     z-index: 1;
-    padding-left: 10%;
-    padding-top: 7rem;
+    padding-left: 30px;
+    padding-top: 5rem;
     left: 0;
     top: 0;
     width: 100%;
@@ -132,10 +146,10 @@ header.menu-container {
   }
   .navbar ul li {
     display: block;
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
   }
   .navbar ul li a {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -156,7 +170,7 @@ body.menu-active {
   z-index: 2;
   display: none;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1200px) {
   .navbar-toggler {
     display: inline-block;
   }
@@ -166,7 +180,7 @@ body.menu-active {
   margin: auto;
   background-color: #fff;
   max-width: 1160px;
-  padding: 0px 30px 10px 30px;
+  padding: 0px 20px 10px 20px;
 }
 @media only screen and (max-width: 1200px) {
   .container {
@@ -179,7 +193,8 @@ body.menu-active {
     max-width: 520px;
   }
 }
-.container .embed {
+
+.embed {
   position: relative;
   padding-bottom: 56.25%;
   /* ratio 16x9 */
@@ -188,27 +203,43 @@ body.menu-active {
   width: 100%;
   height: auto;
 }
-.container .embed iframe {
+.embed iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.container .images {
+
+.visuals {
+  display: grid;
+  grid-row-gap: 10px;
+}
+.visuals > img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.images {
   display: flex;
+  flex-direction: row;
+}
+.images img {
+  padding: 0px 0px 0px 10px;
+  max-width: 100%;
+}
+.images img:first-child {
+  padding: 0px;
 }
 @media only screen and (max-width: 700px) {
-  .container .images {
-    display: block;
+  .images {
+    flex-direction: column;
   }
-}
-.container .images img {
-  padding-left: 20px;
-  width: 100%;
-}
-.container .images img:first-child {
-  padding-left: 0px;
+  .images img {
+    padding: 10px 0px 0px 0px;
+    max-width: 100%;
+  }
 }
 
 .content h1:first-child {
