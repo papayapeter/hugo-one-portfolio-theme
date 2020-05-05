@@ -1,6 +1,22 @@
 <footer class="menu-container">
+  <div>
+    {{ with .Site.Params.social.facebook }}
+      <a href="{{ . }}"><i class="fab fa-facebook-f"></i></a>
+    {{ end }}
+    {{ with .Site.Params.social.instagram }}
+    <a href="{{ . }}"><i class="fab fa-instagram"></i></a>
+    {{ end }}
+    {{ with .Site.Params.social.vimeo }}
+    <a href="{{ . }}"><i class="fab fa-vimeo-v"></i></a>
+    {{ end }}
+    {{ with .Site.Params.social.github }}
+    <a href="{{ . }}"><i class="fab fa-github"></i></a>
+    {{ end }}
+  </div>
   <ul>
-    <li>&copy; 2020 Zeno Gries</li>
+    {{ with .Site.Params.copyright }}
+      <li>{{ . | safeHTML }}</li>
+    {{ end }}
     <li><a href="#">Impressum</a></li>
     <li><a href="#">Datenschutz</a></li>
   </ul>

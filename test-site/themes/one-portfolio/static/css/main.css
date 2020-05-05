@@ -363,6 +363,15 @@ body.menu-active {
   opacity: 1;
 }
 
+footer div {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+footer div i {
+  font-size: 1.2rem;
+  padding: 0px 10px;
+}
 footer ul {
   display: flex;
   justify-content: space-between;

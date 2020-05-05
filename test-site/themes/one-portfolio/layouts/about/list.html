@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <div class="container">
+    <!-- content ------------------------------------------------------------>
+    <div class="content">
+      <!-- title -->
+      <h1>{{ .Title }}</h1>
+      <!-- description -->
+      <p>{{ .Description }}</p>
+      <!-- videos and/or images -->
+      <div class="visuals">
+        <!-- embedded video -->
+        <!-- if vimeo link is given in frontmatter -> show video and fotos below -->
+        {{ if isset .Params "vimeo" }}
+          <div class="embed">
+            <iframe src="https://player.vimeo.com/video/{{ .Params.vimeo }}" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+          <div class="images">
+            {{ range .Params.images }}
+              <img src="{{ . }}" alt="{{ . }}">
+            {{ end }}
+          </div>
+        <!-- else -> show first foto instead of video and then the other fotos -->
+        {{ else }}
+          {{ range first 1 .Params.images }}
+            <img src="{{ . }}" alt="{{ . }}">
+          {{ end }}
+          <div class="images">
+            {{ range after 1 .Params.images }}
+              <img src="{{ . }}" alt="{{ . }}">
+            {{ end }}
+          </div>
+        {{ end }}
+        <!-- images -->
+      </div>
+
+      <!-- content -->
+      {{ .Content }}
+    </div>
+  </div>
+{{end }}
