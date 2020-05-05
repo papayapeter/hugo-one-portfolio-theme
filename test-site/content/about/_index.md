@@ -1,7 +1,7 @@
 ---
 title: "About"
 draft: false
-images: ["/img/der-kuenstler-ist-jetzt-flach/01.jpg"]
+images: ["/img/content/der-kuenstler-ist-jetzt-flach/01.jpg"]
 ---
 
 1. Zeno Gries (geboren 1993 in Berlin) lebt und arbeitet in Berlin. \

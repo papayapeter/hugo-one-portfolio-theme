@@ -6,7 +6,7 @@ draft: false
 thumbnail: "/img/thumbnail/der-kuenstler-ist-jetzt-flach.jpg"
 description: "Videoinstallation / video installation (loop, 1 min 56 sec), 2018"
 vimeo: 165126512
-images: ["/img/der-kuenstler-ist-jetzt-flach/01.jpg", "/img/der-kuenstler-ist-jetzt-flach/02.jpg", "/img/der-kuenstler-ist-jetzt-flach/03.jpg"]
+images: ["/img/content/der-kuenstler-ist-jetzt-flach/01.jpg", "/img/content/der-kuenstler-ist-jetzt-flach/02.jpg", "/img/content/der-kuenstler-ist-jetzt-flach/03.jpg"]
 ---
 
 1. Das auf eine Plastikfolie projizierte Video zeigt mich, wie ich langsam und tief atme. Hinter der Folie, die in etwa meinen Körpermaßen entspricht, schalten sich Lüfter im Takt meines Atems an und wieder aus — die Folie bläht sich entsprechend der Atmung auf und fällt wieder in sich zusammen. \

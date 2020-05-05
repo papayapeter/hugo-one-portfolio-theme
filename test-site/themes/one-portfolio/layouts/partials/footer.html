@@ -1,5 +1,8 @@
 <footer class="menu-container">
   <div>
+    {{ with .Site.Params.email }}
+      <a href="mailto:{{ . }}"><i class="fas fa-envelope"></i></a>
+    {{ end }}
     {{ with .Site.Params.social.facebook }}
       <a href="{{ . }}"><i class="fab fa-facebook-f"></i></a>
     {{ end }}
