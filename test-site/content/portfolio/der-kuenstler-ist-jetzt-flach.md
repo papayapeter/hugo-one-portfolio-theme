@@ -1,7 +1,7 @@
 ---
 title: "Der Künstler ist jetzt flach und leuchtet"
 date: 2018-06-15
-weight: 1
+weight: 5
 draft: false
 thumbnail: "/img/thumbnail/der-kuenstler-ist-jetzt-flach.jpg"
 description: "Videoinstallation / video installation (loop, 1 min 56 sec), 2018"

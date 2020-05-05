@@ -4,17 +4,20 @@ draft: false
 images: ["/img/der-kuenstler-ist-jetzt-flach/01.jpg"]
 ---
 
-1. Zeno Gries (geboren 1993 in Berlin) lebt und arbeitet in Berlin.
-2. Zeno Gries (born 1993 in Berlin) lives and works in Berlin.
-
-1. **2015 - 2020** \
-Expandend Cinema an der HGB bei Clemens von Wedemyer
-2. **2015 - 2020** \
-Expandend Cinema at the Academy of Visual Arts Leipzig with Clemens von Wedemyer
-
-1. **2013 - 2015** \
+1. Zeno Gries (geboren 1993 in Berlin) lebt und arbeitet in Berlin. \
+\
+**2015 - 2020** \
+Expandend Cinema an der HGB bei Clemens von Wedemyer \
+\
+**2013 - 2015** \
 Medienkunst an der HGB Leipzig
-2. **2013 - 2015** \
+
+2. Zeno Gries (born 1993 in Berlin) lives and works in Berlin. \
+\
+**2015 - 2020** \
+Expandend Cinema at the Academy of Visual Arts Leipzig with Clemens von Wedemyer \
+\
+**2013 - 2015** \
 Medienkunst at the Academy of Visual Arts Leipzig
 
 ### Ausstellungen / Exhibitions
