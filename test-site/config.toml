@@ -13,6 +13,10 @@ googleAnalytics = "UA-140792581-1"
 
   # Nav links in the top menu
   [[params.navlinks]]
+  name = "Arbeiten"
+  url  = "portfolio/"
+
+  [[params.navlinks]]
   name = "Kollektive Arbeiten"
   url  = "collective/"
 

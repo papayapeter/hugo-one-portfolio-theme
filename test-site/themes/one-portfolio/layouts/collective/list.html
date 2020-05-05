@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <div class="menu-container menu-grid">
+    {{ range .Pages }}
+      <!-- menu element thumbnail -->
+      <a class="thumbnail hover-gif" href="{{ .Permalink }}">
+        <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
+        <div class="thumbnail-caption">
+          <h4>{{ .Title }}</h4>
+        </div>
+      </a>
+    {{ end }}
+    <!-- menu element thumbnail end -->
+  </div>
+{{end }}
