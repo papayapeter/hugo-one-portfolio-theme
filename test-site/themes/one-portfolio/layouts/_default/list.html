@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="menu-container menu-grid">
-    {{ range .Pages }}
+    {{ range .Site.RegularPages }}
       <!-- menu element thumbnail -->
       <a class="thumbnail hover-gif" href="{{ .Permalink }}">
         <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">

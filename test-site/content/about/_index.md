@@ -17,7 +17,7 @@ Medienkunst an der HGB Leipzig
 2. **2013 - 2015** \
 Medienkunst at the Academy of Visual Arts Leipzig
 
-### **Ausstellungen / Exhibitions**
+### Ausstellungen / Exhibitions
 * 2018 *I AM (NOT) YOUR TOOL*, Kunstraum 53, Hildesheim
 * 2018 *Hungry Eyes Festival*,  Alte Universitätsbibliothek, Gießen
 * 2017 *The Soft Animal of your Body*, HGB Festsaal, Leipzig

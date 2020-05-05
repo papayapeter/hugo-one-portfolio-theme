@@ -13,7 +13,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: map-get($theme-colors, "headline-text");
-  font-weight: normal;
+  font-weight: bold;
 }
 
 h1 {
@@ -382,6 +382,7 @@ body.menu-active {
     vertical-align: bottom;
 
     font-size: 1.5rem;
+    font-weight: normal;
     color: map-get($theme-colors, "thumbnail-text");
   }
 
