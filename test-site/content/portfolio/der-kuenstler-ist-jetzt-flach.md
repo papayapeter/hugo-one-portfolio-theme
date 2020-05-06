@@ -1,5 +1,5 @@
 ---
-title: "Der Künstler ist jetzt flach und leuchtet"
+title: "Wrapping Paper"
 date: 2018-06-15
 weight: 5
 draft: false

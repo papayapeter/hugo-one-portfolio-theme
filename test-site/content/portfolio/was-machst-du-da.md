@@ -6,7 +6,7 @@ draft: false
 thumbnail: "/img/thumbnail/was-machst-du-da.jpg"
 description: "Installation, 2018"
 vimeo: 298211915
-images: ["/img/content/die-zweitbesetzung/01.jpg", "/img/content/die-zweitbesetzung/02.jpg", "/img/content/die-zweitbesetzung/03.jpg"]
+images: ["/img/content/was-machst-du-da/01.jpg", "/img/content/was-machst-du-da/02.jpg"]
 ---
 
 1. Im Ausstellungsraum sind mehrere animatronische Hände verteilt. Diese liegen auf dem Boden mit der Handfläche nach oben, während sich der Zeigefinger immer wieder leicht krümmt als Andeutung der auffordernden Geste „Komm her“. \

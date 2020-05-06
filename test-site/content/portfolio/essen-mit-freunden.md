@@ -1,12 +1,12 @@
 ---
-title: "Wrapping Paper"
+title: "Essen mit Freunden"
 date: 2015-01-01
 weight: 5
 draft: false
 thumbnail: "/img/thumbnail/essen-mit-freunden.jpg"
 description: "Installation / Performance, 2015"
 vimeo: 165127906
-images: ["/img/content/die-zweitbesetzung/01.jpg", "/img/content/die-zweitbesetzung/02.jpg", "/img/content/die-zweitbesetzung/03.jpg"]
+images: ["/img/content/essen-mit-freunden/01.jpg", "/img/content/essen-mit-freunden/02.jpg"]
 ---
 
 1. Zu Beginn der Eröffnung der Gruppenausstellung Jubeljahre begann ich inmitten der Ausstellung ein Essen zu kochen, zu dem lediglich die an der Ausstellung beteiligten Künstler geladen waren. \

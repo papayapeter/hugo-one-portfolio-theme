@@ -6,7 +6,6 @@ draft: false
 thumbnail: "/img/thumbnail/walking.jpg"
 description: "Video (Loop , 18 sec), 2014"
 vimeo: 165126930
-images: ["/img/content/die-zweitbesetzung/01.jpg", "/img/content/die-zweitbesetzung/02.jpg", "/img/content/die-zweitbesetzung/03.jpg"]
 ---
 
 1. Das Video zeigt mich, wie ich scheinbar nie enden wollende Stufen in einem verwaisten, etwas heruntergekommenen Treppenhaus hinabsteige. Mimik und Gestik bleiben ausdruckslos, monoton. \

@@ -15,7 +15,9 @@ Der Film ist als Diplomarbeit zum Abschluss meines Kunststudiums entstanden. \
 \
 **Zeno Gries** Lola Mercedes Wittstamm \
 **Kamera** Aron Lesnik \
-**Ton** Timo Kraus / Sarai Meyron / Julia Perkuhn
+**Ton** Timo Kraus / Sarai Meyron / Julia Perkuhn \
+\
+Für einen link zum Film bitte eine [Email schreiben](mailto:zenogries@gmail.com).
 2. At the centre of the work is the close collaboration with the actress Lola Mercedes Wittstamm, who has the task of impersonating me in front of the camera. In the film, she presents this work, which is currently in the making, as Zeno Gries. Through the positions of actress — director, whose balance of power is constantly changing, the focus of the work on representation and identity, original versus adaptation, become apparent. But since Lola's task as an actress is to be me, it also remains unclear whether she is actually the director of this film. \
 The entire team was chosen not only for their technical expertise, but also for their ability to be performers, as they had the freedom to intervene in the artistic process. Thus most of the film was created performatively at the moment, depending on the team's involvement. My task on the set was mainly to create a atmosphere for self participation, to successively relinquish my power as director and not to follow a ready-made script. \
 \
@@ -23,7 +25,9 @@ The film was made as a diploma thesis at the end of my art studies. \
 \
 **Zeno Gries** Lola Mercedes Wittstamm \
 **Camera** Aron Lesnik \
-**Sound** Timo Kraus / Sarai Meyron / Julia Perkuhn
+**Sound** Timo Kraus / Sarai Meyron / Julia Perkuhn \
+\
+For a link to the film please [send me a request](mailto:zenogries@gmail.com).
 
 ### Ausgestellt bei / exhibited at
 * 2020 *Diplompräsentation*, Schaubühne Lindenfels, Leipzig

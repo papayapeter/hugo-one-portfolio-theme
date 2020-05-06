@@ -6,7 +6,7 @@ draft: false
 thumbnail: "/img/thumbnail/i-am-not-your-tool.jpg"
 description: "bewegte Skulptur (Loop , 1 min 32 sec), 2017"
 vimeo: 206320657
-images: ["/img/content/die-zweitbesetzung/01.jpg", "/img/content/die-zweitbesetzung/02.jpg", "/img/content/die-zweitbesetzung/03.jpg"]
+images: ["/img/content/i-am-not-your-tool/01.jpg", "/img/content/i-am-not-your-tool/02.jpg"]
 ---
 
 1. I am not your tool ist aus der künstlerischen Auseinandersetzung mit dem Zustand der Stagnation, dem unbewussten Warten auf den Einschnitt, entstanden. Ein Silikongesicht wird von einem Gerüst aus Sperrholz getragen, in dem Elektronik, Kabel, Motoren, Lautsprecher und Mechanik montiert sind. In einer monotonen Bewegung kann man den Kopf beim Ein- und Ausatmen beobachten und seinem Rhythmus lauschen. Animation von Kiefer- und Augenbrauenbewegung sowie die Atemgeräusche laufen in einem Loop, der sich alle 1:32 Minuten wiederholt. \

@@ -6,7 +6,6 @@ draft: false
 thumbnail: "/img/thumbnail/ich-kann-mich-nicht-beherrschen.jpg"
 description: "Video (1 min 35 sec), 2018"
 vimeo: 274727493
-images: ["/img/content/die-zweitbesetzung/01.jpg", "/img/content/die-zweitbesetzung/02.jpg", "/img/content/die-zweitbesetzung/03.jpg"]
 ---
 
 1. *Ich kann mich nicht beherrschen* beinhaltet gleichzeitig die Fantasie von und die Angst vor Kontrollverlust. Die Videoarbeit zeigt, wie sich die Hände von meinem Körper ablösen und selbst agieren. Meine Reaktion ist nicht klar abzulesen — Erregung oder Unbehagen? \
