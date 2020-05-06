@@ -4,7 +4,7 @@ date: 2020-02-12
 weight: 5
 draft: false
 thumbnail: "/img/thumbnail/die-zweitbesetzung.jpg"
-description: "Film (14 min 24 sec), 2020 "
+description: "Film (14 min 24 sec), 2020"
 images: ["/img/content/die-zweitbesetzung/01.jpg", "/img/content/die-zweitbesetzung/02.jpg", "/img/content/die-zweitbesetzung/03.jpg"]
 ---
 
