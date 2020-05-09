@@ -1,6 +1,6 @@
 baseurl = "https://zenogries.com"
 title = "Zeno Gries"
-theme = "one-portfolio"
+theme = "portfolio"
 languageCode = "de"
 
 # Enable Google Analytics by entering your tracking code
