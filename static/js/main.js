@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  // preload images images
+  $('.hover-gif img').each(
+    function() {
+      $('<img/>')[0].src = this.src.replace('.jpg', '_animated.gif');
+    }
+  );
+
   // to animate gif when you hover over it
   $('.hover-gif').hover(
     function() {
@@ -8,12 +15,14 @@ $(document).ready(function() {
       $('img', this).attr('src', $('img', this).attr('src').replace('_animated.gif', '.jpg'));
     }
   );
-  
+
   // to open nav menu on small screen
-  $('.navbar-toggler').click(function() {
-    $('.menu-modal').toggleClass('active');
-    $('span', this).toggleClass('fa-bars');
-    $('span', this).toggleClass('fa-times');
-    $('body').toggleClass('menu-active')
-  });
+  $('.navbar-toggler').click(
+    function() {
+      $('.menu-modal').toggleClass('active');
+      $('span', this).toggleClass('fa-bars');
+      $('span', this).toggleClass('fa-times');
+      $('body').toggleClass('menu-active')
+    }
+  );
 });

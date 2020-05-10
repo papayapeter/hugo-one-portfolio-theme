@@ -76,7 +76,7 @@ a {
   @media (hover: none) {
     color: map-get($theme-colors, "link-hover");
   }
-  transition: color .3s;
+  @include transition(color .3s);
 
   &:hover {
     color: map-get($theme-colors, "link-hover");
@@ -147,7 +147,7 @@ header.menu-container {
       background-color: $white;
       overflow: auto;
       opacity: 0;
-      transition: opacity ease 1s;
+      @include transition(opacity ease 1s);
 
       li {
         display: block;
@@ -388,7 +388,7 @@ body.menu-active {
 
 // make caption visible on hover
   opacity: 0;
-  transition: ease opacity .3s;
+  @include transition(ease opacity .3s);
   // disable this on toucscreens
   @media (hover: none) {
     opacity: 1;
