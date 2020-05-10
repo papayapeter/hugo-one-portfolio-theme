@@ -6,7 +6,7 @@ $(document).ready(function() {
     }
   );
 
-  // to animate gif when you hover over it
+  // animate gif when you hover over it
   $('.hover-gif').hover(
     function() {
       $('img', this).attr('src', $('img', this).attr('src').replace('.jpg', '_animated.gif'));
@@ -15,8 +15,14 @@ $(document).ready(function() {
       $('img', this).attr('src', $('img', this).attr('src').replace('_animated.gif', '.jpg'));
     }
   );
+  // animate gif when you hover touch it
+  $('.hover-gif').on('touchstart',
+    function() {
+      $('img', this).attr('src', $('img', this).attr('src').replace('.jpg', '_animated.gif'));
+    }
+  );
 
-  // to open nav menu on small screen
+  // open nav menu on small screen
   $('.navbar-toggler').click(
     function() {
       $('.menu-modal').toggleClass('active');
