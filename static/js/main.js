@@ -21,6 +21,11 @@ $(document).ready(function() {
       $('img', this).attr('src', $('img', this).attr('src').replace('.jpg', '_animated.gif'));
     }
   );
+  $('.hover-gif').on('touchend',
+    function() {
+      $('img', this).attr('src', $('img', this).attr('src').replace('_animated.gif', '.jpg'));
+    }
+  );
 
   // open nav menu on small screen
   $('.navbar-toggler').click(
